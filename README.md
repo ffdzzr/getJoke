@@ -1,9 +1,9 @@
 get a random joke and you can combine it with other programs like cowsay.  
-put line after into your .bashrc, to get a joke first time you open up terminal  
-cowsay -f moose "$(python3 /path/to/getJoke.py)"
-if [ "$(tty)" == /dev/pts/0 ]; then cowsay -f moose "$(python3 /path/to/getJoke.py)"; fi   
+put line after into your ~/.bash_aliases, to get a joke every time you open up session 0 in your terminal  
   
-!!!replace "/path/to/getJoke.py" with your own!!!  
+if [ "$(tty)" == /dev/pts/0 ]; then timeout 1s cowsay -f moose "$(python3 /path/to/getJoke.py)"; fi   
+  
+⚠️ replace "/path/to/getJoke.py" with your own⚠️  
   
   
 using: https://v2.jokeapi.dev/
