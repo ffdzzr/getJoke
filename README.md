@@ -6,4 +6,4 @@ if [ "$(tty)" == /dev/pts/0 ]; then timeout 1s cowsay -f moose "$(python3 /path/
 ⚠️ replace "/path/to/getJoke.py" with your own⚠️ <br />
 <br />
 <br />
-using: https://v2.jokeapi.dev/
+using: https://v2.jokeapi.dev/ <br />
